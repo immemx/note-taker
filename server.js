@@ -5,6 +5,8 @@ const { notes } = require('./db/db.json')
 const path = require('path')
 const createNewNotes = require('./lib/notes.js')
 
+const PORT = prcoess.env.PORT || 80
+
 app.use(express.static('public'))
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
@@ -31,5 +33,7 @@ app.post('/api/notes', (req, res) => {
     res.json(Newnotes)
 })
 
-app.listen(80)
+app.listen(PORT, () => {
+    console.log(`Server is now running at ${PORT}`)
+});
 
