@@ -19,7 +19,7 @@ OOP
 
 ## Installation
 
-Follow this link : https://git.heroku.com/note-taker-memx.git
+Follow this link : https://note-taker-memx.herokuapp.com/
 ~ OR ~  
 Use Git Clone to clone this code down to your local machine.
 
